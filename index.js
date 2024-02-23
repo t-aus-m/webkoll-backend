@@ -66,7 +66,7 @@ app.get('/', async (request, response) => {
     const client = await page.target().createCDPSession();
 
     await page.setViewport(viewport);
-    await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3803.0 Safari/537.36');
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.3');
 
     if (validateUrl) {
       await page.setRequestInterception(true);
